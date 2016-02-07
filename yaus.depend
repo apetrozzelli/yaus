@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1454779852 source:/home/apetrozzelli/dev/cpp/yaus/main.cpp
+	<iostream>
+	"include/Citizen.h"
+	"include/Producer.h"
+	"include/Consumer.h"
+	"include/Bread.h"
+	"include/Water.h"
+
+1453409678 /home/apetrozzelli/dev/cpp/yaus/include/Citizen.h
+	<string>
+
+1453415990 source:/home/apetrozzelli/dev/cpp/yaus/src/Citizen.cpp
+	"../include/Citizen.h"
+	<iostream>
+
+1453414624 source:/home/apetrozzelli/dev/cpp/yaus/src/Provider.cpp
+	"Provider.h"
+
+1453415208 /home/apetrozzelli/dev/cpp/yaus/include/Provider.h
+
+1453415973 source:/home/apetrozzelli/dev/cpp/yaus/src/Bread.cpp
+	"../include/Bread.h"
+
+1454778967 /home/apetrozzelli/dev/cpp/yaus/include/Bread.h
+	<ostream>
+
+1453416069 source:/home/apetrozzelli/dev/cpp/yaus/src/Water.cpp
+	"../include/Water.h"
+
+1454778967 /home/apetrozzelli/dev/cpp/yaus/include/Water.h
+	<ostream>
+
+1454780279 /home/apetrozzelli/dev/cpp/yaus/include/Producer.h
+	<iostream>
+
+1454779911 /home/apetrozzelli/dev/cpp/yaus/include/Consumer.h
+	<iostream>
+
