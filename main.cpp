@@ -11,7 +11,7 @@ using namespace std;
 class BreadMaker : public Citizen, public Producer<Bread>, public Consumer<Water>
 {
 public:
-    BreadMaker(std::string name) : Citizen(name) {}
+    BreadMaker(std::string name, std::set<Citizen> citizens) : Citizen(name), Producer(citizens) {}
     virtual ~BreadMaker() {}
 };
 
@@ -21,14 +21,16 @@ int main()
 {
     cout << "Hello world!" << endl;
 
+    std::set<Citizen> _citizens;
+
     Citizen a("Alessandro");
     a.SayHello();
 
-    BreadMaker bm("Ciccio");
+    BreadMaker bm("Ciccio", _citizens);
     bm.SayHello();
     Bread b = bm.provide();
 
-    WaterMaker wm;
+    WaterMaker wm(_citizens);
     Water w = wm.provide();
 
     cout << b << ", " << w << endl;

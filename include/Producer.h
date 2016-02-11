@@ -3,12 +3,13 @@
 
 #include <iostream>
 #include <set>
+#include "Citizen.h"
 
 template <class T>
 class Producer
 {
 public:
-    Producer(std::set<Producer> &producers) : _producers(producers) {}
+    Producer(std::set<Citizen> &citizens) : _citizens(citizens) {}
 
     T provide()
     {
@@ -17,7 +18,7 @@ public:
         return t;
     }
     private:
-    std::set<Producer> &_producers;
+    std::set<Citizen> &_citizens;
 };
 
 #endif // PRODUCER_H
