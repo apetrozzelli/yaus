@@ -5,6 +5,7 @@
  */
 
 apply plugin: 'cpp'
+apply plugin: 'visual-studio'
 
 model {
     components {
