@@ -1,4 +1,4 @@
-#include "../include/Citizen.h"
+#include "Citizen.h"
 
 #include <iostream>
 
