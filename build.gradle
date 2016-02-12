@@ -6,6 +6,11 @@
 
 apply plugin: 'cpp'
 apply plugin: 'visual-studio'
+apply plugin: 'google-test'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.11'
+}
 
 model {
     components {
