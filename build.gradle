@@ -13,24 +13,10 @@ task wrapper(type: Wrapper) {
 }
 
 model {
-    platforms {
-        x86 {
-            architecture "x86"
-        }
-        x64 {
-            architecture "x86_64"
-        }
-        itanium {
-            architecture "ia-64"
-        }
-    }
     components {
         yausmodel(NativeLibrarySpec) {
-            targetPlatform "x86"
         }
         yausmain(NativeExecutableSpec) {
-            targetPlatform "x86"
-
             sources {
                 cpp {
                     lib library: "yausmodel"

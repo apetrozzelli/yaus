@@ -1,4 +1,8 @@
 language: cpp
-compiler: clang
+
+compiler: 
+ - clang
+ - gcc
+
 script: ./travis-ci.sh
 
