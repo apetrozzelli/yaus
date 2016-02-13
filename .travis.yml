@@ -1,1 +1,3 @@
 language: cpp
+script: ./travis-ci.sh
+
