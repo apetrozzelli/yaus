@@ -2,7 +2,7 @@ language: cpp
 
 before_install:
  - sudo apt-get update
- - sudo apt-get install libc6-dev-amd64
+ - sudo apt-get -y install libc6-dev-amd64
 
 script: ./travis-ci.sh
 
