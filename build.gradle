@@ -32,10 +32,10 @@ model {
     repositories {
         libs(PrebuiltLibraries) {
             googleTest {
-                headers.srcDir "libs/googleTest/master/include"
+                headers.srcDir "dependencies/googletest/googletest/include"
                 binaries.withType(StaticLibraryBinary) {
                     staticLibraryFile =
-                        file("libs/googleTest/master/lib/" +
+                        file("dependencies/googletest/build/googletest/" +
                              findGoogleTestCoreLibForPlatform(targetPlatform))
                 }
             }
@@ -66,7 +66,7 @@ def findGoogleTestCoreLibForPlatform(Platform platform) {
     } else if (platform.operatingSystem.macOsX) {
         return "osx/libgtest.a"
     } else {
-        return "linux/libgtest.a"
+        return "libgtest.a"
     }
 }
 
