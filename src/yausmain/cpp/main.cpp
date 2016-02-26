@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "Citizen.h"
-#include "Producer.h"
-#include "Consumer.h"
-#include "Bread.h"
-#include "Water.h"
+#include "yausmodel/Citizen.h"
+#include "yausmodel/Producer.h"
+#include "yausmodel/Consumer.h"
+#include "yausmodel/Bread.h"
+#include "yausmodel/Water.h"
 
 using namespace std;
 

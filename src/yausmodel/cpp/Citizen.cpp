@@ -1,4 +1,4 @@
-#include "Citizen.h"
+#include "yausmodel/Citizen.h"
 
 #include <iostream>
 
