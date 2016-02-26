@@ -6,5 +6,9 @@ compiler:
  - clang
  - gcc
 
+os:
+ - linux
+ - osx
+
 script: ./travis-ci.sh
 
