@@ -64,7 +64,7 @@ def findGoogleTestCoreLibForPlatform(Platform platform) {
 //        return "cygwin/gtest-core.lib"
 //        return "mingw/gtest-core.lib"
     } else if (platform.operatingSystem.macOsX) {
-        return "osx/libgtest.a"
+        return "libgtest.a"
     } else {
         return "libgtest.a"
     }
