@@ -25,4 +25,4 @@ cmake -Dgtest_build_samples=OFF \
       -Dgmock_build_tests=OFF \
       -DCMAKE_CXX_FLAGS=$CXX_FLAGS \
       ../../googletest
-make
+cmake --build . --config Debug
