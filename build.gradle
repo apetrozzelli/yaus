@@ -13,6 +13,10 @@ task wrapper(type: Wrapper) {
 }
 
 model {
+    buildTypes {
+        debug
+        release
+    }
     components {
         yausmodel(NativeLibrarySpec) {
         }
@@ -42,6 +46,16 @@ model {
         }
     }
     binaries {
+        all {
+            if (toolChain in Gcc && buildType == buildTypes.debug) {
+                cppCompiler.args "-g"
+            }
+            if (toolChain in VisualCpp && buildType == buildTypes.debug) {
+                cppCompiler.args '/Zi'
+                cppCompiler.define 'DEBUG'
+                linker.args '/DEBUG'
+            }
+        }
         withType(GoogleTestTestSuiteBinarySpec) {
             lib library: "googleTest", linkage: "static"
 
@@ -60,9 +74,6 @@ tasks.withType(RunTestExecutable) {
 def findGoogleTestCoreLibForPlatform(Platform platform) {
     if (platform.operatingSystem.windows) {
         return "Debug/gtest.lib"
-//        return "vs2013/gtest-core.lib"
-//        return "cygwin/gtest-core.lib"
-//        return "mingw/gtest-core.lib"
     } else if (platform.operatingSystem.macOsX) {
         return "libgtest.a"
     } else {
