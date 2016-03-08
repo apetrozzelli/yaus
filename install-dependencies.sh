@@ -26,3 +26,14 @@ cmake -Dgtest_build_samples=OFF \
       -DCMAKE_CXX_FLAGS=$CXX_FLAGS \
       ../../googletest
 cmake --build . --config Debug
+
+export BUILD_TYPE=release
+
+cmake -Dgtest_build_samples=OFF \
+      -Dgmock_build_samples=OFF \
+      -Dgtest_build_tests=OFF \
+      -Dgmock_build_tests=OFF \
+      -DCMAKE_CXX_FLAGS=$CXX_FLAGS \
+      ../../googletest
+cmake --build . --config Release 
+
