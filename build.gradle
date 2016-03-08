@@ -51,7 +51,7 @@ model {
                 cppCompiler.args "-g"
             }
             if (toolChain in VisualCpp && buildType == buildTypes.debug) {
-                cppCompiler.args '/Zi'
+                cppCompiler.args '/MTd'
                 cppCompiler.define 'DEBUG'
                 linker.args '/MTd'
             }
@@ -64,7 +64,7 @@ model {
                 linker.args '-pthread'
             }
             if (toolChain in VisualCpp && buildType == buildTypes.debug) {
-                cppCompiler.args '/Zi'
+                cppCompiler.args '/MTd'
                 cppCompiler.define 'DEBUG'
                 linker.args '/MTd'
             }
