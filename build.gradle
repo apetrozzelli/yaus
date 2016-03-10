@@ -39,7 +39,7 @@ model {
                 headers.srcDir "dependencies/googletest/googletest/include"
                 binaries.withType(StaticLibraryBinary) {
                     staticLibraryFile =
-                        file("dependencies/googletest/build/googletest/" +
+                        file("dependencies/googletest/build/googletest/" + buildType.name + "/" +
                              findGoogleTestCoreLibForPlatform(targetPlatform))
                 }
             }

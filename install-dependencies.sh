@@ -12,28 +12,32 @@ cd googletest
 export SHARED_LIB=OFF
 export STATIC_LIB=ON
 export CMAKE_PKG=OFF
-export BUILD_TYPE=debug
 #export VERBOSE_MAKE=true
 
 mkdir build || true
 mkdir build/googletest || true
-cd build/googletest
+mkdir build/googletest/debug || true
+cd build/googletest/debug
 
 cmake -Dgtest_build_samples=OFF \
       -Dgmock_build_samples=OFF \
       -Dgtest_build_tests=OFF \
       -Dgmock_build_tests=OFF \
       -DCMAKE_CXX_FLAGS=$CXX_FLAGS \
-      ../../googletest
-cmake --build . --config Debug
+      -DCMAKE_BUILD_TYPE=Debug \
+      ../../../googletest
+cmake --build . --config debug
 
-export BUILD_TYPE=release
+cd ..
+mkdir release
+cd release
 
 cmake -Dgtest_build_samples=OFF \
       -Dgmock_build_samples=OFF \
       -Dgtest_build_tests=OFF \
       -Dgmock_build_tests=OFF \
       -DCMAKE_CXX_FLAGS=$CXX_FLAGS \
-      ../../googletest
-cmake --build . --config Release 
+      -DCMAKE_BUILD_TYPE=Release \
+      ../../../googletest
+cmake --build . --config release 
 
