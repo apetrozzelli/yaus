@@ -40,7 +40,7 @@ model {
                 binaries.withType(StaticLibraryBinary) {
                     staticLibraryFile =
                         file("dependencies/googletest/build/googletest/" + buildType.name + "/" +
-                             findGoogleTestCoreLibForPlatform(targetPlatform))
+                             findGoogleTestCoreLibForPlatform(targetPlatform, buildType.name))
                 }
             }
         }
@@ -76,9 +76,13 @@ tasks.withType(RunTestExecutable) {
     args "--gtest_output=xml:test_detail.xml"
 }
 
-def findGoogleTestCoreLibForPlatform(Platform platform) {
+def findGoogleTestCoreLibForPlatform(Platform platform, String buildType) {
     if (platform.operatingSystem.windows) {
-        return "Debug/gtest.lib"
+        if (buildType == "debug") {
+           return "Debug/gtest.lib"
+        } else {
+           return "Release/gtest.lib"
+        }
     } else if (platform.operatingSystem.macOsX) {
         return "libgtest.a"
     } else {
