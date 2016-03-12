@@ -10,6 +10,9 @@ windows:
 
 [![Coverage Status](https://coveralls.io/repos/github/apetrozzelli/yaus/badge.svg?branch=master)](https://coveralls.io/github/apetrozzelli/yaus?branch=master)
 
+[![Issue Stats](http://issuestats.com/github/apetrozzelli/yaus/badge/issue)](http://issuestats.com/github/apetrozzelli/yaus)
+
+[![Issue Stats](http://issuestats.com/github/apetrozzelli/yaus/badge/pr)](http://issuestats.com/github/apetrozzelli/yaus)
 ***
 
 Build instructions
