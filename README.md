@@ -24,3 +24,6 @@ To build yaus yourself you have to:
 
 1. execute the `./install-dependencies.sh` script
 2. execute `./gradlew check`
+
+Get the [latest release](https://github.com/apetrozzelli/yaus/releases/latest)! 
+-------------------------------------------------------------------------------
