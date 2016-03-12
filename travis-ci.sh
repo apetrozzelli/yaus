@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-./gradlew check
+./gradlew build
+./gradlew installYausmainReleaseExecutable 

@@ -1,14 +1,16 @@
 language: cpp
-
-install: ./install-dependencies.sh
-
-compiler: 
- - clang
- - gcc
-
+install: "./install-dependencies.sh"
+compiler:
+- clang
+- gcc
 os:
- - linux
- - osx
-
-script: ./travis-ci.sh
-
+- linux
+- osx
+script: "./travis-ci.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: pt2avXRWPG4JqCeBElW644T7gHgIF9U8WlYh+aMDDngw4oNRrDRVqfv8N/FqdOSS1iOSJU2HsdEbU3pievlvYU9EDLbsjiXsfQgkzexwQW6/q/5WZZ/7sJLMAEK8AK4tWRE4RW1MJNkdPGrKOdeoiKnXh6xfWpc1EpB0wcc74SFNyDgmj3aLxapjgjOe/o1Lv5dICtjonFCQjCRJ41tCimiVRrwQ1BHvviIp8kXO0AvfphtMSTUHLx7AHltdnDWJsoFMn5yWknyFwEzfOnbydOxuv/mbyi6Sbmg6WWWHURmTjR0bVEwgS5Q/OTQRHQPlQptrXXJc6l4SAgDvb2gKr1+Kws+g47mGLHlMevBILEDEFzlqyKFqfBgxTXcUfDHQDi5r3d+urnQj/TondI0jNxIcW2PE9rQ8lHPuP/8LxCIKfmqYVauovUsYpHPkkEmSpVxPcAji0iJyCiwskhKXxdqxxmicNzYHwjQL7u2/RysEeFp8z7znGjAizbjxd/TR4bbIpUSsuxPOm+uELFJXpfCFREhSVOfURCYgFcnqOJctjbIGmz5EUlhbSsUn/qQXYF3QAxIbz66JzlZR4E96HcoyHAuJM6bF39iSRJ+ayxaTn+0iwz07J8lTc0JbxoTnjJ4qJqfiLshxDprnkFHrrB0M974GDdKGCm7Kx/R3M/g=
+  file: "./build/install/yausmain/release/yausmain"
+  on:
+    repo: apetrozzelli/yaus
