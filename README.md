@@ -18,10 +18,8 @@ Get the [latest release](https://github.com/apetrozzelli/yaus/releases/latest)!
 Statistics
 ----------
 
-linux & osx:
 [![Build Status](https://travis-ci.org/apetrozzelli/yaus.png?branch=master)](https://travis-ci.org/apetrozzelli/yaus)
-windows:
-[![Build status](https://ci.appveyor.com/api/projects/status/navecp6nfn90tq0r/branch/master?svg=true)](https://ci.appveyor.com/project/apetrozzelli/yaus/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/navecp6nfn90tq0r/branch/master?svg=true&passingText=windows%20build%20passing)](https://ci.appveyor.com/project/apetrozzelli/yaus/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/apetrozzelli/yaus/badge.svg?branch=master)](https://coveralls.io/github/apetrozzelli/yaus?branch=master)
 [![Issue Stats](http://issuestats.com/github/apetrozzelli/yaus/badge/issue)](http://issuestats.com/github/apetrozzelli/yaus)
 [![Issue Stats](http://issuestats.com/github/apetrozzelli/yaus/badge/pr)](http://issuestats.com/github/apetrozzelli/yaus)
