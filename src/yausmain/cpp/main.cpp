@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 #include "yausmodel/Citizen.h"
 #include "yausmodel/Producer.h"
@@ -11,7 +12,7 @@ using namespace std;
 class BreadMaker : public Citizen, public Producer<Bread>, public Consumer<Water>
 {
 public:
-    BreadMaker(std::string name, std::set<Citizen> citizens) : Citizen(name), Producer(citizens) {}
+    BreadMaker(std::string name, std::vector<Citizen> citizens) : Citizen(name), Producer(citizens) {}
     virtual ~BreadMaker() {}
 };
 
@@ -21,7 +22,7 @@ int main()
 {
     cout << "Hello world!" << endl;
 
-    std::set<Citizen> _citizens;
+    std::vector<Citizen> _citizens;
 
     Citizen a("Alessandro");
     a.SayHello();

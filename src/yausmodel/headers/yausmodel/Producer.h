@@ -2,14 +2,14 @@
 #define PRODUCER_H
 
 #include <iostream>
-#include <set>
+#include <vector>
 #include "Citizen.h"
 
 template <class T>
 class Producer
 {
 public:
-    Producer(std::set<Citizen> &citizens) : _citizens(citizens) {}
+    Producer(std::vector<Citizen> &citizens) : _citizens(citizens) {}
 
     T provide()
     {
@@ -18,7 +18,7 @@ public:
         return t;
     }
     private:
-    std::set<Citizen> &_citizens;
+    std::vector<Citizen> &_citizens;
 };
 
 #endif // PRODUCER_H
