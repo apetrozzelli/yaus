@@ -41,3 +41,4 @@ cmake -Dgtest_build_samples=OFF \
       ../../../googletest
 cmake --build . --config release 
 
+cd ../../..
