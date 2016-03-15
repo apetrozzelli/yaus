@@ -53,7 +53,6 @@ model {
             if (toolChain in VisualCpp && buildType == buildTypes.debug) {
                 cppCompiler.args '/MTd'
                 cppCompiler.define 'DEBUG'
-                linker.args '/MTd'
             }
         }
         withType(GoogleTestTestSuiteBinarySpec) {
@@ -66,7 +65,6 @@ model {
             if (toolChain in VisualCpp && buildType == buildTypes.debug) {
                 cppCompiler.args '/MTd'
                 cppCompiler.define 'DEBUG'
-                linker.args '/MTd'
             }
         }
     }
