@@ -23,3 +23,5 @@ Statistics
 [![Coverage Status](https://coveralls.io/repos/github/apetrozzelli/yaus/badge.svg?branch=master)](https://coveralls.io/github/apetrozzelli/yaus?branch=master)
 [![Issue Stats](http://issuestats.com/github/apetrozzelli/yaus/badge/issue)](http://issuestats.com/github/apetrozzelli/yaus)
 [![Issue Stats](http://issuestats.com/github/apetrozzelli/yaus/badge/pr)](http://issuestats.com/github/apetrozzelli/yaus)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/apetrozzelli/yaus/blob/master/LICENSE.txt)
+
