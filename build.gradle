@@ -9,7 +9,7 @@ apply plugin: 'visual-studio'
 apply plugin: 'google-test-test-suite'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.11'
+    gradleVersion = '2.12'
 }
 
 model {
