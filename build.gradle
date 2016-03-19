@@ -23,7 +23,7 @@ model {
         yausmain(NativeExecutableSpec) {
             sources {
                 cpp {
-                    lib library: "yausmodel"
+                    lib library: "yausmodel", linkage: "static"
                 }
             }
         }
