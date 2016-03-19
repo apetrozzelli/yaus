@@ -1,0 +1,7 @@
+version: 1.0.{build}
+image: Visual Studio 2013
+build_script:
+- cmd: >-
+    C:\cygwin\bin\bash install-dependencies.sh
+    gradlew.bat build
+
