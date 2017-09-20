@@ -8,10 +8,6 @@ apply plugin: 'cpp'
 apply plugin: 'visual-studio'
 apply plugin: 'google-test-test-suite'
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '3.4.1'
-}
-
 model {
     buildTypes {
         debug
