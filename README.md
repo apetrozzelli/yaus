@@ -1,16 +1,24 @@
 # yaus
 Yet Another Universe Simulator
-==============================
 
-Build instructions
-------------------
+# Build instructions
+
 yaus is built with [Gradle](http://gradle.org/ "Realize Build Happiness").
 yaus unit tests use the [Google Test framework](https://github.com/google/googletest), which instead requires [CMake](https://cmake.org/) to build.
 
-To build yaus yourself you have to:
+## Linux
+To build yaus yourself on Linux you have to:
 
 1. execute the `./install-dependencies.sh` script
 2. execute `./gradlew check`
+
+## Windows
+To build yaus yourself on Windows you have to run the following commands from a [Cygwin](https://www.cygwin.com/) shell:
+
+1. execute the `./install-dependencies.sh` script
+2. execute `./gradlew check`
+
+*Please note that you have to install the Windows build of CMake, not the Cygwin one as it is not guaranteed to support latest Microsoft Visual Studio release generators.*
 
 Get the [latest release](https://github.com/apetrozzelli/yaus/releases/latest)! 
 -------------------------------------------------------------------------------
