@@ -73,7 +73,7 @@ tasks.withType(RunTestExecutable) {
 def findGoogleTestCoreLibForPlatform(Platform platform, String buildType) {
     if (platform.operatingSystem.windows) {
         if (buildType == "debug") {
-           return "Debug/gtest.lib"
+           return "Debug/gtestd.lib"
         } else {
            return "Release/gtest.lib"
         }
