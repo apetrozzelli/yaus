@@ -80,7 +80,11 @@ def findGoogleTestCoreLibForPlatform(Platform platform, String buildType) {
     } else if (platform.operatingSystem.macOsX) {
         return "libgtest.a"
     } else {
-        return "libgtest.a"
+        if (buildType == "debug") {
+           return "libgtestd.a"
+        } else {
+           return "libgtest.a"
+        }
     }
 }
 
