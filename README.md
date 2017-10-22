@@ -6,6 +6,11 @@ Yet Another Universe Simulator
 yaus is built with [Gradle](http://gradle.org/ "Realize Build Happiness").
 yaus unit tests use the [Google Test framework](https://github.com/google/googletest), which instead requires [CMake](https://cmake.org/) to build.
 
+## pre-requisites
+
+1. sudo apt-get install cmake
+2. sudo apt-get install openjdk-8-jdk
+
 ## Linux
 To build yaus yourself on Linux you have to:
 
