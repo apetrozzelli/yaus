@@ -20,25 +20,21 @@ mkdir build/googletest/debug || true
 cd build/googletest/debug
 
 cmake -Dgtest_build_samples=OFF \
-      -Dgmock_build_samples=OFF \
       -Dgtest_build_tests=OFF \
-      -Dgmock_build_tests=OFF \
       -DCMAKE_CXX_FLAGS=$CXX_FLAGS \
       -DCMAKE_BUILD_TYPE=Debug \
       ../../../googletest
-cmake --build . --config debug
+cmake --build . --config Debug
 
 cd ..
 mkdir release
 cd release
 
 cmake -Dgtest_build_samples=OFF \
-      -Dgmock_build_samples=OFF \
       -Dgtest_build_tests=OFF \
-      -Dgmock_build_tests=OFF \
       -DCMAKE_CXX_FLAGS=$CXX_FLAGS \
       -DCMAKE_BUILD_TYPE=Release \
       ../../../googletest
-cmake --build . --config release 
+cmake --build . --config Release 
 
 cd ../../..
